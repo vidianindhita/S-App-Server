@@ -73,28 +73,28 @@ app.put('/device-1/message-off', function(req, res) {
 });
 
 app.put('/device-2/on', function(req, res) {
-	device_1 = {
+	device_2 = {
 		status: true
 	}
 	res.send(device_2);
 });
 
 app.put('/device-2/off', function(req, res) {
-	device_1 = {
+	device_2 = {
 		status: false
 	}
 	res.send(device_2);
 });
 
 app.put('/device-3/on', function(req, res) {
-	device_1 = {
+	device_3 = {
 		status: true
 	}
 	res.send(device_3);
 });
 
 app.put('/device-3/off', function(req, res) {
-	device_1 = {
+	device_3 = {
 		status: false
 	}
 	res.send(device_3);
