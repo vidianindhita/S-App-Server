@@ -100,6 +100,66 @@ app.put('/device-3/off', function(req, res) {
 	res.send(device_3);
 });
 
+app.post('/device-1/on', function(req, res) {
+	device_1 = {
+		status: true,
+		message: false
+	}
+	res.send(device_1);
+});
+
+app.post('/device-1/off', function(req, res) {
+	device_1 = {
+		status: false,
+		message: false
+	}
+	res.send(device_1);
+});
+
+app.post('/device-1/message', function(req, res) {
+	device_1 = {
+		status: true,
+		message: true
+	}
+	res.send(device_1);
+});
+
+app.post('/device-1/message-off', function(req, res) {
+	device_1 = {
+		status: true,
+		message: false
+	}
+	res.send(device_1);
+});
+
+app.post('/device-2/on', function(req, res) {
+	device_2 = {
+		status: true
+	}
+	res.send(device_2);
+});
+
+app.post('/device-2/off', function(req, res) {
+	device_2 = {
+		status: false
+	}
+	res.send(device_2);
+});
+
+app.post('/device-3/on', function(req, res) {
+	device_3 = {
+		status: true
+	}
+	res.send(device_3);
+});
+
+app.post('/device-3/off', function(req, res) {
+	device_3 = {
+		status: false
+	}
+	res.send(device_3);
+});
+
 var httpsServer = https.createServer(credentials, app);
 
 // Default HTTPS Port
